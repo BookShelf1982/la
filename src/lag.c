@@ -707,7 +707,7 @@ void gen_mat_printf_macros(FILE *stream, size_t rows, size_t cols, Type type)
 {
     fprintf(stream, "#define %s_Fmt \"%s(\\n\" \\\n", mat_type(rows, cols, type), mat_ctor(rows, cols, type));
     for (size_t y = 0; y < rows; ++y) {
-        fprintf(stream, "    \"");
+        fprintf(stream, "    \"    ");
         for (size_t x = 0; x < cols; ++x) {
             if (x > 0) fprintf(stream, ", ");
             fprintf(stream, "%%%s", type_defs[type].fmt);

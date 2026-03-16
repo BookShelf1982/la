@@ -238,8 +238,8 @@ typedef union {
 #define V2f_Fmt "v2f(%f, %f)"
 #define V2f_Arg(v) (v).x, (v).y
 #define M2f_Fmt "m2f(\n" \
-    "%f, %f,\n" \
-    "%f, %f\n" \
+    "    %f, %f,\n" \
+    "    %f, %f\n" \
 ")"
 #define M2f_Arg(m) \
     (m)._11, (m)._12, \
@@ -288,8 +288,8 @@ LADEF M2f m2f_rot(float angle);
 #define V2d_Fmt "v2d(%lf, %lf)"
 #define V2d_Arg(v) (v).x, (v).y
 #define M2d_Fmt "m2d(\n" \
-    "%lf, %lf,\n" \
-    "%lf, %lf\n" \
+    "    %lf, %lf,\n" \
+    "    %lf, %lf\n" \
 ")"
 #define M2d_Arg(m) \
     (m)._11, (m)._12, \
@@ -338,8 +338,8 @@ LADEF M2d m2d_rot(double angle);
 #define V2i_Fmt "v2i(%d, %d)"
 #define V2i_Arg(v) (v).x, (v).y
 #define M2i_Fmt "m2i(\n" \
-    "%d, %d,\n" \
-    "%d, %d\n" \
+    "    %d, %d,\n" \
+    "    %d, %d\n" \
 ")"
 #define M2i_Arg(m) \
     (m)._11, (m)._12, \
@@ -378,8 +378,8 @@ LADEF V2i m2i_mul_vec(M2i m, V2i v);
 #define V2u_Fmt "v2u(%u, %u)"
 #define V2u_Arg(v) (v).x, (v).y
 #define M2u_Fmt "m2u(\n" \
-    "%u, %u,\n" \
-    "%u, %u\n" \
+    "    %u, %u,\n" \
+    "    %u, %u\n" \
 ")"
 #define M2u_Arg(m) \
     (m)._11, (m)._12, \
@@ -418,9 +418,9 @@ LADEF V2u m2u_mul_vec(M2u m, V2u v);
 #define V3f_Fmt "v3f(%f, %f, %f)"
 #define V3f_Arg(v) (v).x, (v).y, (v).z
 #define M3f_Fmt "m3f(\n" \
-    "%f, %f, %f,\n" \
-    "%f, %f, %f,\n" \
-    "%f, %f, %f\n" \
+    "    %f, %f, %f,\n" \
+    "    %f, %f, %f,\n" \
+    "    %f, %f, %f\n" \
 ")"
 #define M3f_Arg(m) \
     (m)._11, (m)._12, (m)._13, \
@@ -473,9 +473,9 @@ LADEF M3f m3f_rot_z(float angle);
 #define V3d_Fmt "v3d(%lf, %lf, %lf)"
 #define V3d_Arg(v) (v).x, (v).y, (v).z
 #define M3d_Fmt "m3d(\n" \
-    "%lf, %lf, %lf,\n" \
-    "%lf, %lf, %lf,\n" \
-    "%lf, %lf, %lf\n" \
+    "    %lf, %lf, %lf,\n" \
+    "    %lf, %lf, %lf,\n" \
+    "    %lf, %lf, %lf\n" \
 ")"
 #define M3d_Arg(m) \
     (m)._11, (m)._12, (m)._13, \
@@ -528,9 +528,9 @@ LADEF M3d m3d_rot_z(double angle);
 #define V3i_Fmt "v3i(%d, %d, %d)"
 #define V3i_Arg(v) (v).x, (v).y, (v).z
 #define M3i_Fmt "m3i(\n" \
-    "%d, %d, %d,\n" \
-    "%d, %d, %d,\n" \
-    "%d, %d, %d\n" \
+    "    %d, %d, %d,\n" \
+    "    %d, %d, %d,\n" \
+    "    %d, %d, %d\n" \
 ")"
 #define M3i_Arg(m) \
     (m)._11, (m)._12, (m)._13, \
@@ -571,9 +571,9 @@ LADEF V3i m3i_mul_vec(M3i m, V3i v);
 #define V3u_Fmt "v3u(%u, %u, %u)"
 #define V3u_Arg(v) (v).x, (v).y, (v).z
 #define M3u_Fmt "m3u(\n" \
-    "%u, %u, %u,\n" \
-    "%u, %u, %u,\n" \
-    "%u, %u, %u\n" \
+    "    %u, %u, %u,\n" \
+    "    %u, %u, %u,\n" \
+    "    %u, %u, %u\n" \
 ")"
 #define M3u_Arg(m) \
     (m)._11, (m)._12, (m)._13, \
@@ -614,10 +614,10 @@ LADEF V3u m3u_mul_vec(M3u m, V3u v);
 #define V4f_Fmt "v4f(%f, %f, %f, %f)"
 #define V4f_Arg(v) (v).x, (v).y, (v).z, (v).w
 #define M4f_Fmt "m4f(\n" \
-    "%f, %f, %f, %f,\n" \
-    "%f, %f, %f, %f,\n" \
-    "%f, %f, %f, %f,\n" \
-    "%f, %f, %f, %f\n" \
+    "    %f, %f, %f, %f,\n" \
+    "    %f, %f, %f, %f,\n" \
+    "    %f, %f, %f, %f,\n" \
+    "    %f, %f, %f, %f\n" \
 ")"
 #define M4f_Arg(m) \
     (m)._11, (m)._12, (m)._13, (m)._14, \
@@ -670,10 +670,10 @@ LADEF M4f m4f_rot_z(float angle);
 #define V4d_Fmt "v4d(%lf, %lf, %lf, %lf)"
 #define V4d_Arg(v) (v).x, (v).y, (v).z, (v).w
 #define M4d_Fmt "m4d(\n" \
-    "%lf, %lf, %lf, %lf,\n" \
-    "%lf, %lf, %lf, %lf,\n" \
-    "%lf, %lf, %lf, %lf,\n" \
-    "%lf, %lf, %lf, %lf\n" \
+    "    %lf, %lf, %lf, %lf,\n" \
+    "    %lf, %lf, %lf, %lf,\n" \
+    "    %lf, %lf, %lf, %lf,\n" \
+    "    %lf, %lf, %lf, %lf\n" \
 ")"
 #define M4d_Arg(m) \
     (m)._11, (m)._12, (m)._13, (m)._14, \
@@ -726,10 +726,10 @@ LADEF M4d m4d_rot_z(double angle);
 #define V4i_Fmt "v4i(%d, %d, %d, %d)"
 #define V4i_Arg(v) (v).x, (v).y, (v).z, (v).w
 #define M4i_Fmt "m4i(\n" \
-    "%d, %d, %d, %d,\n" \
-    "%d, %d, %d, %d,\n" \
-    "%d, %d, %d, %d,\n" \
-    "%d, %d, %d, %d\n" \
+    "    %d, %d, %d, %d,\n" \
+    "    %d, %d, %d, %d,\n" \
+    "    %d, %d, %d, %d,\n" \
+    "    %d, %d, %d, %d\n" \
 ")"
 #define M4i_Arg(m) \
     (m)._11, (m)._12, (m)._13, (m)._14, \
@@ -770,10 +770,10 @@ LADEF V4i m4i_mul_vec(M4i m, V4i v);
 #define V4u_Fmt "v4u(%u, %u, %u, %u)"
 #define V4u_Arg(v) (v).x, (v).y, (v).z, (v).w
 #define M4u_Fmt "m4u(\n" \
-    "%u, %u, %u, %u,\n" \
-    "%u, %u, %u, %u,\n" \
-    "%u, %u, %u, %u,\n" \
-    "%u, %u, %u, %u\n" \
+    "    %u, %u, %u, %u,\n" \
+    "    %u, %u, %u, %u,\n" \
+    "    %u, %u, %u, %u,\n" \
+    "    %u, %u, %u, %u\n" \
 ")"
 #define M4u_Arg(m) \
     (m)._11, (m)._12, (m)._13, (m)._14, \
